@@ -15,14 +15,14 @@ To run the notebooks with regular CERN resources:
 To run the notebooks locally:
 * Install [Python](https://www.python.org/downloads/), [ROOT](https://root.cern/install/) and [Jupyter](https://jupyter.org/install)
 * Open a terminal and create a working directory
-* Download the package by `git clone`
-* Enter the package by `cd`
-* Download the input files from LPC node by `scp -r YOURLPCUSERNAME@cmslpc-sl7.fnal.gov:/uscms/home/zfwd666/nobackup/CMSDAS/CMSDASLPC2023-Tau-Short-Exercise/CMSDASLPC2023-Tau-Short-Exercise/inputFiles .`
+* Download the package by `git clone https://github.com/Ksavva1021/short-tau-ex.git`
+* Enter the package by `cd short-tau-ex`
+* Download the input files from LPC node by `scp -r YOURLPCUSERNAME@lxplus.cern.ch:/eos/user/c/cmsdas/2023/short-ex-tau .`
 * You're all set and can launch the two exercises locally, `jupyter-notebook tau_short_exercise_1.ipynb` and `jupyter-notebook tau_short_exercise_2.ipynb`, which will open the kernel in your browser
 
 Troubleshooting:
 * The software stack can be installed with brew and/or pip (root, jupyter, python3) locally.
-* If the jupyter notebook cannot find ROOT lib link in your laptop despite the above installations, you can try with `root --notebook ` and `root --notebook `.
+* If the jupyter notebook cannot find ROOT lib link in your laptop despite the above installations, you can try with `root --notebook tau_short_exercise_1.ipynb` and `root --notebook tau_short_exercise_2.ipynb`.
 
 If you finished the exercise, it would be great to send your feedback to the mattermost channel with the information 
 whether you were able to successfully tackle the exercise and ideally also with pointers to finished notebooks, 
